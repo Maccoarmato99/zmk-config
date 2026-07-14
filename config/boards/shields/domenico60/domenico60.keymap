@@ -7,11 +7,21 @@
 
         default_layer {
             bindings = <
-                &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSPC  &kp DEL
-                &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp BSLH  &kp PG_UP
-                &kp CAPS  &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp RET   &none     &kp PG_DN
-                &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &kp UP    &none     &none
-                &kp LCTRL &kp LGUI  &kp LALT  &none     &none     &kp SPACE &none     &none     &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT &none     &none
+                &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSPC  &none
+                &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp NUHS  &none
+                &kp CAPS  &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp RET   &none     &none
+                &kp LSHFT &kp NUBS  &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &none     &none
+                &kp LCTRL &kp LGUI  &kp LALT  &none     &none     &kp SPACE &none     &none     &kp RALT  &mo 1     &kp RCTRL &kp RGUI  &none     &none     &none
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+                &kp GRAVE &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12   &kp DEL   &none
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &none
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &none     &none
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp UP    &none     &none
+                &trans    &trans    &trans    &none     &none     &trans    &none     &none     &trans    &trans    &kp LEFT &kp DOWN  &kp RIGHT &none     &none
             >;
         };
     };
