@@ -1,0 +1,6 @@
+if SHIELD_DOMENICO60
+
+config ZMK_KEYBOARD_NAME
+    default "Domenico60"
+
+endif

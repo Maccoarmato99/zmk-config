@@ -1,0 +1,7 @@
+file_format: "1"
+id: domenico60
+name: Domenico60
+type: shield
+requires: [nice_nano]
+features:
+  - keys
