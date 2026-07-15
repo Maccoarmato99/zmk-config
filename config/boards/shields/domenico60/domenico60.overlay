@@ -8,11 +8,10 @@
     };
 
     /*
-     * Firmware rifatto in modo "rettangolare" 5x15.
-     * Qui NON saltiamo le posizioni vuote nel matrix-transform.
-     * Le posizioni vuote stanno nel file .keymap come &none.
-     *
-     * Catodo dei diodi verso le righe = col2row.
+     * Test USB-only.
+     * Matrice completa 5x15.
+     * Col1 spostata sul pin ponticellato P0.09-LF.
+     * Catodo diodi verso righe = col2row.
      */
 
     kscan0: kscan0 {
@@ -22,7 +21,7 @@
 
         col-gpios
             = <&gpio0 6 GPIO_ACTIVE_HIGH>    /* col0  P0.06 */
-            , <&gpio0 9 GPIO_ACTIVE_HIGH>    /* col1  P0.09 */
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>    /* col1  P0.09-LF ponticello */
             , <&gpio0 17 GPIO_ACTIVE_HIGH>   /* col2  P0.17 */
             , <&gpio0 20 GPIO_ACTIVE_HIGH>   /* col3  P0.20 */
             , <&gpio0 22 GPIO_ACTIVE_HIGH>   /* col4  P0.22 */
