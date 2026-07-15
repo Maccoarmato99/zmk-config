@@ -8,10 +8,11 @@
     };
 
     /*
-     * Test USB-only + NFC pins as GPIO.
-     * Matrice completa 5x15.
-     * Col1 spostata su P0.09-LF con ponticello.
-     * Catodo diodi verso righe = col2row.
+     * Domenico60 - ISO 60%
+     * Matrice elettrica completa: 5 righe x 15 colonne.
+     * Le posizioni fisicamente vuote sono gestite nel .keymap con &none.
+     *
+     * Diodi: catodo verso riga -> diode-direction = "col2row".
      */
 
     kscan0: kscan0 {
@@ -21,7 +22,7 @@
 
         col-gpios
             = <&gpio0 6 GPIO_ACTIVE_HIGH>    /* col0  P0.06 */
-            , <&gpio0 8 GPIO_ACTIVE_HIGH>    /* col1  P0.09-LF ponticello */
+            , <&gpio0 8 GPIO_ACTIVE_HIGH>    /* col1  P0.08 */
             , <&gpio0 17 GPIO_ACTIVE_HIGH>   /* col2  P0.17 */
             , <&gpio0 20 GPIO_ACTIVE_HIGH>   /* col3  P0.20 */
             , <&gpio0 22 GPIO_ACTIVE_HIGH>   /* col4  P0.22 */
