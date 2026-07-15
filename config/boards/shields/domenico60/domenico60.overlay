@@ -8,9 +8,9 @@
     };
 
     /*
-     * Test USB-only.
+     * Test USB-only + NFC pins as GPIO.
      * Matrice completa 5x15.
-     * Col1 spostata sul pin ponticellato P0.09-LF.
+     * Col1 spostata su P0.09-LF con ponticello.
      * Catodo diodi verso righe = col2row.
      */
 
